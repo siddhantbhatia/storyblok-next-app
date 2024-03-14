@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-sb-types": "storyblok-generate-ts source=./components.280099.json target=./src/storyblok/types/component-types-sb"
+    "generate-sb-types": "storyblok pull-components --space 280099 && storyblok-generate-ts source=./components.280099.json target=./src/storyblok/types/component-types-sb"
   },
   "dependencies": {
     "@storyblok/react": "^3.0.9",
