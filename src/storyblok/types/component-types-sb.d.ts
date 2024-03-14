@@ -118,6 +118,13 @@ export interface FeatureCardSectionStoryblok {
   [k: string]: any;
 }
 
+export interface FooterStoryblok {
+  trademark: string;
+  _uid: string;
+  component: "footer";
+  [k: string]: any;
+}
+
 export interface GridStoryblok {
   columns?: (
     | AnchorStoryblok
@@ -126,6 +133,7 @@ export interface GridStoryblok {
     | FeatureStoryblok
     | FeatureCardStoryblok
     | FeatureCardSectionStoryblok
+    | FooterStoryblok
     | GridStoryblok
     | HeaderStoryblok
     | HeroStoryblok
@@ -183,6 +191,7 @@ export interface PageStoryblok {
     | FeatureStoryblok
     | FeatureCardStoryblok
     | FeatureCardSectionStoryblok
+    | FooterStoryblok
     | GridStoryblok
     | HeaderStoryblok
     | HeroStoryblok

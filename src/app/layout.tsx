@@ -11,6 +11,10 @@ import Hero from "@/storyblok/components/Hero";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/storyblok/components/Header";
+import FeatureCardSection from "@/storyblok/components/FeatureCardSection";
+import FaqSection from "@/storyblok/components/FaqSection";
+import InternalLinkSection from "@/storyblok/components/InternalLinkSection";
+import Footer from "@/storyblok/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +33,10 @@ storyblokInit({
     feature: Feature,
     hero: Hero,
     header: Header,
+    feature_card_section: FeatureCardSection,
+    faq_section: FaqSection,
+    internal_link_section: InternalLinkSection,
+    footer: Footer,
   },
   apiOptions: {
     region: "eu",

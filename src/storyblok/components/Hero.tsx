@@ -1,5 +1,6 @@
 import { HeroStoryblok } from "@/storyblok/types/component-types-sb";
 import { storyblokEditable } from "@storyblok/react/rsc";
+import Image from "next/image";
 import Link from "next/link";
 
 interface HeroComponentProps {
@@ -9,11 +10,14 @@ interface HeroComponentProps {
 const Hero = ({ blok }: HeroComponentProps) => {
   return (
     <section className="relative" {...storyblokEditable(blok)}>
-      <img
-        src={blok.background_image.filename}
-        alt={blok.background_image.alt}
-        className="w-full h-auto"
-      />
+      <div className="relative h-[calc(100vh-20px)]">
+        <Image
+          src={blok.background_image.filename}
+          alt={blok.background_image.alt ?? ""}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center">
