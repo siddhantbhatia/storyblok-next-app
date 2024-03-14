@@ -6,9 +6,11 @@ import Page from "@/storyblok/components/Page";
 import Teaser from "@/storyblok/components/Teaser";
 import Grid from "@/storyblok/components/Grid";
 import Feature from "@/storyblok/components/Feature";
+import Hero from "@/storyblok/components/Hero";
 
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/storyblok/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +27,8 @@ storyblokInit({
     page: Page,
     grid: Grid,
     feature: Feature,
+    hero: Hero,
+    header: Header,
   },
   apiOptions: {
     region: "eu",
