@@ -11,7 +11,7 @@ const FeatureCardSection = ({ blok }: FeatureCardSectionProps) => {
     <section className="bg-gray-200 py-12" {...storyblokEditable(blok)}>
       <div className="container mx-auto">
         {blok.features.map((feature, idx) => {
-          let imageOrder, textOrder, textDirection;
+          let textOrder, textDirection;
           if (idx % 2 === 0) {
             textOrder = "order-last";
           } else {
@@ -34,7 +34,7 @@ const FeatureCardSection = ({ blok }: FeatureCardSectionProps) => {
               <div
                 className={`p-6 w-full sm:w-2/3 ${textDirection} ${textOrder}`}
               >
-                <h2 className="text-xl font-bold mb-4">{feature.title}</h2>
+                <p className="text-xl font-bold mb-4">{feature.title}</p>
                 <p>{feature.description}</p>
               </div>
             </div>

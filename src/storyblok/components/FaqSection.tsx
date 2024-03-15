@@ -30,9 +30,9 @@ const Accordion = ({ question, answer }: AccordionProps) => {
           itemProp="mainEntity"
           itemType="https://schema.org/Question"
         >
-          <h2 itemProp="name" className="text-lg font-semibold">
+          <p itemProp="name" className="text-lg font-semibold">
             {question}
-          </h2>
+          </p>
         </div>
       </div>
 
