@@ -31,6 +31,7 @@
       "component_group_uuid": "0e6ca810-d40a-48d9-a0c9-1333793d668a",
       "color": null,
       "icon": null,
+      "content_type_asset_preview": null,
       "component_group_name": "common"
     },
     {
@@ -62,6 +63,7 @@
       "component_group_uuid": "81d1689f-67fe-403d-b2e1-c1c1c98412c8",
       "color": null,
       "icon": null,
+      "content_type_asset_preview": null,
       "component_group_name": "landing-page"
     },
     {
@@ -97,6 +99,7 @@
       "component_group_uuid": "81d1689f-67fe-403d-b2e1-c1c1c98412c8",
       "color": null,
       "icon": null,
+      "content_type_asset_preview": null,
       "component_group_name": "landing-page"
     },
     {
@@ -120,7 +123,8 @@
       "real_name": "feature",
       "component_group_uuid": null,
       "color": null,
-      "icon": null
+      "icon": null,
+      "content_type_asset_preview": null
     },
     {
       "name": "feature_card",
@@ -156,6 +160,7 @@
       "component_group_uuid": "81d1689f-67fe-403d-b2e1-c1c1c98412c8",
       "color": null,
       "icon": null,
+      "content_type_asset_preview": null,
       "component_group_name": "landing-page"
     },
     {
@@ -187,6 +192,7 @@
       "component_group_uuid": "81d1689f-67fe-403d-b2e1-c1c1c98412c8",
       "color": null,
       "icon": null,
+      "content_type_asset_preview": null,
       "component_group_name": "landing-page"
     },
     {
@@ -212,6 +218,7 @@
       "component_group_uuid": "81d1689f-67fe-403d-b2e1-c1c1c98412c8",
       "color": null,
       "icon": null,
+      "content_type_asset_preview": null,
       "component_group_name": "landing-page"
     },
     {
@@ -235,7 +242,8 @@
       "real_name": "grid",
       "component_group_uuid": null,
       "color": null,
-      "icon": null
+      "icon": null,
+      "content_type_asset_preview": null
     },
     {
       "name": "header",
@@ -282,6 +290,7 @@
       "component_group_uuid": "81d1689f-67fe-403d-b2e1-c1c1c98412c8",
       "color": null,
       "icon": null,
+      "content_type_asset_preview": null,
       "component_group_name": "landing-page"
     },
     {
@@ -328,6 +337,7 @@
       "component_group_uuid": "81d1689f-67fe-403d-b2e1-c1c1c98412c8",
       "color": null,
       "icon": null,
+      "content_type_asset_preview": null,
       "component_group_name": "landing-page"
     },
     {
@@ -357,6 +367,7 @@
       "component_group_uuid": "81d1689f-67fe-403d-b2e1-c1c1c98412c8",
       "color": null,
       "icon": null,
+      "content_type_asset_preview": null,
       "component_group_name": "landing-page"
     },
     {
@@ -392,6 +403,7 @@
       "component_group_uuid": "81d1689f-67fe-403d-b2e1-c1c1c98412c8",
       "color": null,
       "icon": null,
+      "content_type_asset_preview": null,
       "component_group_name": "landing-page"
     },
     {
@@ -415,7 +427,57 @@
       "real_name": "page",
       "component_group_uuid": null,
       "color": null,
-      "icon": null
+      "icon": null,
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "seo_meta_tags",
+      "display_name": null,
+      "created_at": "2024-03-15T05:27:43.919Z",
+      "updated_at": "2024-03-15T05:30:51.614Z",
+      "id": 5500802,
+      "schema": {
+        "page_title": {
+          "type": "text",
+          "required": true
+        },
+        "page_desription": {
+          "type": "text",
+          "required": true
+        },
+        "og_title": {
+          "type": "text",
+          "required": true
+        },
+        "og_description": {
+          "type": "text",
+          "required": true
+        },
+        "og_image": {
+          "type": "asset",
+          "required": true,
+          "filetypes": [
+            "images"
+          ]
+        },
+        "og_type": {
+          "type": "text",
+          "required": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "seo_meta_tags",
+      "component_group_uuid": "0e6ca810-d40a-48d9-a0c9-1333793d668a",
+      "color": null,
+      "icon": null,
+      "content_type_asset_preview": null,
+      "component_group_name": "common"
     },
     {
       "name": "teaser",
@@ -438,7 +500,8 @@
       "real_name": "teaser",
       "component_group_uuid": null,
       "color": null,
-      "icon": null
+      "icon": null,
+      "content_type_asset_preview": null
     }
   ]
 }

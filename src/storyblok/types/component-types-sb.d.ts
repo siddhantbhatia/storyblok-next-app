@@ -140,6 +140,7 @@ export interface GridStoryblok {
     | InternalLinkStoryblok
     | InternalLinkSectionStoryblok
     | PageStoryblok
+    | SeoMetaTagsStoryblok
     | TeaserStoryblok
   )[];
   _uid: string;
@@ -198,11 +199,24 @@ export interface PageStoryblok {
     | InternalLinkStoryblok
     | InternalLinkSectionStoryblok
     | PageStoryblok
+    | SeoMetaTagsStoryblok
     | TeaserStoryblok
   )[];
   _uid: string;
   component: "page";
   uuid?: string;
+  [k: string]: any;
+}
+
+export interface SeoMetaTagsStoryblok {
+  page_title: string;
+  page_desription: string;
+  og_title: string;
+  og_description: string;
+  og_image: AssetStoryblok;
+  og_type: string;
+  _uid: string;
+  component: "seo_meta_tags";
   [k: string]: any;
 }
 
