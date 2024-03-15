@@ -17,12 +17,16 @@ const Hero = ({ blok }: HeroComponentProps) => {
           fill={true}
           priority={true}
           loading="eager"
+          sizes="100vw"
+          objectFit="cover"
         />
       </div>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col gap-3 p-16">
-        <h1 className="text-6xl text-white font-bold mb-3">{blok.title}</h1>
-        <p className="text-3xl text-white font-light text-center">
+      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col gap-3 md:p-16 p-8">
+        <h1 className="text-4xl md:text-6xl text-white font-bold mb-3 text-center">
+          {blok.title}
+        </h1>
+        <p className="text-2xl md:text-3xl text-white font-light text-center">
           {blok.subtitle}
         </p>
         <Link href={blok.cta_href?.cached_url ?? ""}>

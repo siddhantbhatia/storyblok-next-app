@@ -50,8 +50,8 @@ const Accordion = ({ question, answer }: AccordionProps) => {
 
 const FaqSection = ({ blok }: FaqSectionProps) => {
   return (
-    <div className="py-12 bg-slate-200">
-      <div className="container mx-auto " {...storyblokEditable(blok)}>
+    <div className="py-12 bg-slate-200" {...storyblokEditable(blok)}>
+      <div className="px-4 sm:px-0 sm:container mx-auto ">
         <h2 className="text-2xl font-bold mb-4">{blok.title}</h2>
         <div className="flex flex-col gap-4">
           {blok.question_answers.map((item) => (

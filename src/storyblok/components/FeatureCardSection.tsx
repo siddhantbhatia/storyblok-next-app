@@ -1,5 +1,5 @@
 import { FeatureCardSectionStoryblok } from "@/storyblok/types/component-types-sb";
-import { storyblokEditable, StoryblokComponent } from "@storyblok/react/rsc";
+import { storyblokEditable } from "@storyblok/react/rsc";
 import Image from "next/image";
 
 interface FeatureCardSectionProps {
@@ -11,7 +11,7 @@ const FeatureCardSection = ({ blok }: FeatureCardSectionProps) => {
     <section className="bg-gray-200 py-12" {...storyblokEditable(blok)}>
       <div className="container mx-auto">
         {blok.features.map((feature, idx) => {
-          let textOrder, textDirection;
+          let textOrder;
           if (idx % 2 === 0) {
             textOrder = "order-last";
           } else {
@@ -31,9 +31,7 @@ const FeatureCardSection = ({ blok }: FeatureCardSectionProps) => {
                   className={`w-full h-auto rounded-t-lg sm:rounded-l-lg sm:rounded-t-none`}
                 />
               </div>
-              <div
-                className={`p-6 w-full sm:w-2/3 ${textDirection} ${textOrder}`}
-              >
+              <div className={`p-6 w-full sm:w-2/3 ${textOrder}`}>
                 <p className="text-xl font-bold mb-4">{feature.title}</p>
                 <p>{feature.description}</p>
               </div>

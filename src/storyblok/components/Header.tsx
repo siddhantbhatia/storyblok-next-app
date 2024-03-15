@@ -20,9 +20,10 @@ const Header = ({ blok }: HeaderComponentProps) => {
           height={60}
           width={60}
           className="rounded-md"
+          priority={true}
         />
 
-        <div className="flex">
+        <div className="hidden md:flex">
           {blok.nav_links && (
             <ul className="flex items-center">
               {blok.nav_links.map((navLink) => (
