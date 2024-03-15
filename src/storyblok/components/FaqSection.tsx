@@ -19,7 +19,9 @@ const Accordion = ({ question, answer }: AccordionProps) => {
 
   return (
     <div
-      className="border-b border-gray-300 py-4 px-4 cursor-pointer transition duration-300 hover:bg-gray-100"
+      className={`border-b border-gray-300 py-4 px-4 cursor-pointer transition duration-300 hover:bg-gray-50 ${
+        open ? "bg-gray-50" : ""
+      }`}
       onClick={() => setOpen(!open)}
     >
       <div className="flex justify-between items-center">
@@ -48,15 +50,19 @@ const Accordion = ({ question, answer }: AccordionProps) => {
 
 const FaqSection = ({ blok }: FaqSectionProps) => {
   return (
-    <div className="grid grid-cols-3" {...storyblokEditable(blok)}>
-      <h2>{blok.title}</h2>
-      {blok.question_answers.map((item) => (
-        <Accordion
-          key={item._uid}
-          question={item.question}
-          answer={item.answer}
-        />
-      ))}
+    <div className="py-12 bg-slate-200">
+      <div className="container mx-auto " {...storyblokEditable(blok)}>
+        <h2 className="text-2xl font-bold mb-4">{blok.title}</h2>
+        <div className="flex flex-col gap-4">
+          {blok.question_answers.map((item) => (
+            <Accordion
+              key={item._uid}
+              question={item.question}
+              answer={item.answer}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

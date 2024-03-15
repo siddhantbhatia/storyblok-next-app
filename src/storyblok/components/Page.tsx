@@ -6,7 +6,7 @@ interface PageProps {
 }
 
 const Page = ({ blok }: PageProps) => (
-  <main className="text-center" {...storyblokEditable(blok)}>
+  <main {...storyblokEditable(blok)}>
     {blok.body?.map((nestedBlok) => (
       <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
     ))}
